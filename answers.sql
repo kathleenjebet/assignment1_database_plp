@@ -7,6 +7,7 @@ CREATE TABLE discharges (
  FOREIGN KEY (admission_id) REFERENCES admissions(admission_id),
  FOREIGN KEY (patient_id) REFERENCES patients(patient_id)
 );
+
 CREATE TABLE admissions (
  admission_id INT primary key auto_increment,
  patient_id INT,
